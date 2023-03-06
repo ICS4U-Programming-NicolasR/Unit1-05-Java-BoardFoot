@@ -51,7 +51,7 @@ public final class BoardFoot {
             final double HEIGHT_DUB = Double.parseDouble(HEIGHT_STR);
             final double WIDTH_DUB = Double.parseDouble(WIDTH_STR);
             final double LENGTH_CALC = lengthCalc(HEIGHT_DUB, WIDTH_DUB);
-            System.out.println("Your lenth is " + LENGTH_CALC);
+            System.out.println("Your lenth is " + LENGTH_CALC + "in");
         } catch (NumberFormatException error) {
             System.out.println("You have entered a string "
                     + "You must enter a real number\n"

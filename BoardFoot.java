@@ -44,9 +44,9 @@ public final class BoardFoot {
         // Created a scanner object
         final Scanner INPUT_SCAN = new Scanner(System.in);
         System.out.println("What is the height(in)?");
-        final String HEIGHT_STR = inputScan.nextLine();
+        final String HEIGHT_STR = INPUT_SCAN.nextLine();
         System.out.println("What is the width(in)?");
-        final String WIDTH_STR = inputScan.nextLine();
+        final String WIDTH_STR = INPUT_SCAN.nextLine();
         try {
             final double HEIGHT_DUB = Double.parseDouble(HEIGHT_STR);
             final double WIDTH_DUB = Double.parseDouble(WIDTH_STR);
@@ -57,6 +57,6 @@ public final class BoardFoot {
                     + "You must enter a real number\n"
                     + error);
         }
-        inputScan.close();
+        INPUT_SCAN.close();
     }
 }

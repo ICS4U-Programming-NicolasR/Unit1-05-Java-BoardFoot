@@ -50,8 +50,12 @@ public final class BoardFoot {
         try {
             final double HEIGHT_DUB = Double.parseDouble(HEIGHT_STR);
             final double WIDTH_DUB = Double.parseDouble(WIDTH_STR);
-            final double LENGTH_CALC = lengthCalc(HEIGHT_DUB, WIDTH_DUB);
-            System.out.println("Your lenth is " + LENGTH_CALC + "in");
+            if (HEIGHT_DUB > 0 && WIDTH_DUB > 0) {
+                final double LENGTH_CALC = lengthCalc(HEIGHT_DUB, WIDTH_DUB);
+                System.out.println("Your lenth is " + LENGTH_CALC + "in");
+            } else {
+                System.out.println("You have entered a negative number");
+            }
         } catch (NumberFormatException error) {
             System.out.println("You have entered a string "
                     + "You must enter a real number\n"
